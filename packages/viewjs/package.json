@@ -1,0 +1,52 @@
+{
+  "name": "viewjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/viewjs.runtime.esm-bundler.js",
+  "types": "dist/viewjs.d.ts",
+  "files": [
+    "index.js",
+    "index.mjs",
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "node": "./index.mjs",
+        "default": "./dist/viewjs.runtime.esm-bundler.js"
+      },
+      "require": "./index.js",
+      "types": "./dist/viewjs.d.ts"
+    },
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "buildOptions": {
+    "name": "viewjs",
+    "formats": [
+      "esm-bundler",
+      "esm-bundler-runtime",
+      "cjs",
+      "global",
+      "global-runtime",
+      "esm-browser",
+      "esm-browser-runtime"
+    ]
+  },
+  "scripts": {},
+  "dependencies": {},
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/viewjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-env/viewjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/J-env/viewjs/issues"
+  },
+  "keywords": [
+    "viewjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

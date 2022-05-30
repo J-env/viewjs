@@ -1,0 +1,35 @@
+{
+  "name": "@viewjs/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/shared.esm-bundler.js",
+  "types": "dist/shared.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "sideEffects": false,
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "scripts": {},
+  "dependencies": {},
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/shared#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-env/viewjs.git",
+    "directory": "packages/shared"
+  },
+  "bugs": {
+    "url": "https://github.com/J-env/viewjs/issues"
+  },
+  "keywords": [
+    "viewjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

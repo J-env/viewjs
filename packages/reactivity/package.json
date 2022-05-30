@@ -1,0 +1,38 @@
+{
+  "name": "@viewjs/reactivity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/reactivity.esm-bundler.js",
+  "types": "dist/reactivity.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "sideEffects": false,
+  "buildOptions": {
+    "name": "viewjsReactivity",
+    "formats": [
+      "esm-bundler",
+      "esm-browser",
+      "cjs",
+      "global"
+    ]
+  },
+  "scripts": {},
+  "dependencies": {},
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/reactivity#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-env/viewjs.git",
+    "directory": "packages/reactivity"
+  },
+  "bugs": {
+    "url": "https://github.com/J-env/viewjs/issues"
+  },
+  "keywords": [
+    "viewjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
