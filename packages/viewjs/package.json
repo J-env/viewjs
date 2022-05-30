@@ -35,7 +35,9 @@
     ]
   },
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "@viewjs/shared": "workspace:^1.0.0"
+  },
   "homepage": "https://github.com/J-env/viewjs/tree/main/packages/viewjs#readme",
   "repository": {
     "type": "git",

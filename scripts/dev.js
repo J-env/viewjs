@@ -74,12 +74,6 @@ async function run() {
       __ESM_BROWSER__: String(format.includes('esm-browser')),
       __NODE_JS__: String(format === 'cjs'),
       __SSR__: String(format === 'cjs' || format.includes('esm-bundler')),
-      __COMPAT__: String(target === 'vue-compat'),
-
-      // Feature flags
-      __FEATURE_SUSPENSE__: `true`,
-      __FEATURE_OPTIONS_API__: `true`,
-      __FEATURE_PROD_DEVTOOLS__: `false`
     },
     watch: {
       onRebuild(error) {
