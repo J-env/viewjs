@@ -1,0 +1,40 @@
+{
+  "name": "@viewjs/vite-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/vite-plugin.cjs.js",
+  "module": "dist/reactivity.esm-bundler.js",
+  "types": "dist/vite-plugin.d.ts",
+  "files": [
+    "dist"
+  ],
+  "buildOptions": {
+    "prod": false,
+    "formats": [
+      "cjs"
+    ]
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "types": "./dist/vite-plugin.d.ts",
+      "require": "./dist/vite-plugin.cjs.js"
+    }
+  },
+  "scripts": {},
+  "dependencies": {},
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/vite-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-env/viewjs.git",
+    "directory": "packages/vite-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/J-env/viewjs/issues"
+  },
+  "keywords": [
+    "viewjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

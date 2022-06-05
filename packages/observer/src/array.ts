@@ -1,4 +1,4 @@
-import { def, setPrototypeOf, objectCreate } from '@viewjs/shared'
+import { def, setPrototypeOf, objectCreate, remove } from '@viewjs/shared'
 
 import type { Observer } from './observe'
 import { __ob__ } from './constants'
@@ -77,13 +77,7 @@ def<any[]>(arrayProto, '$set', function (this: any[], index: number, value: any)
  * 或目标元素引用
  */
 def<any[]>(arrayProto, '$remove', function (this: any[], item: any): any[] | void {
-  if (this.length) {
-    const index = this.indexOf(item)
-
-    if (index > -1) {
-      return this.splice(index, 1)
-    }
-  }
+  return remove(this, item)
 })
 
 declare global {

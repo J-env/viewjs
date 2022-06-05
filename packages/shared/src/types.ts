@@ -4,19 +4,19 @@ export const isExtensible = Object.isExtensible // ie9+
 
 export const isFrozen = Object.isFrozen // ie9+
 
-export function isObject(obj: any) {
+export function isObject(obj: any): obj is Record<any, any> {
   return obj !== null && typeof obj === 'object'
 }
 
-export function isPlainObject(obj: any) {
+export function isPlainObject(obj: any): obj is object {
   return toRawType(obj) === 'Object'
 }
 
-export function isArray(obj: any) {
+export function isArray<T = any>(obj: any): obj is T[] {
   return toRawType(obj) === 'Array'
 }
 
-export function isNumeric(s: any) {
+export function isNumeric(s: any): s is number {
   return !isArray(s) && !isNaN(s)
 }
 
@@ -43,8 +43,8 @@ export function isUndefined(obj: any): obj is (null | undefined) {
 /**
  * 检查 value是否为原始值
  */
-export function isPrimitive(value: any) {
-  const v = typeof value
+export function isPrimitive(obj: any): obj is (string | number | boolean | symbol) {
+  const v = typeof obj
   return v === 'string' || v === 'number' || v === 'boolean' || v === 'symbol'
 }
 

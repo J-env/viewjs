@@ -1,28 +1,31 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "es2016",
+    "module": "esnext",
     "lib": [
-      "ESNext",
+      "esnext",
       "DOM"
     ],
     "outDir": "dist",
     "declaration": false,
     "noEmit": true,
     "allowJs": false,
-    "useDefineForClassFields": true,
-    "moduleResolution": "Node",
+    "useDefineForClassFields": false,
+    "moduleResolution": "node",
     "strict": true,
     "emitDeclarationOnly": false,
     "sourceMap": false,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "removeComments": true,
     "noUnusedLocals": true,
+    "experimentalDecorators": true,
     // "noUnusedParameters": false,
     // "noImplicitReturns": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitAny": false,
+    "jsx": "preserve",
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
@@ -43,11 +46,11 @@
   },
   "include": [
     "packages/global.d.ts",
-    "**/*.ts",
-    "**/*.d.ts",
     "packages/*/src",
     "packages/*/__tests__",
-    "test-dts"
+    "test-dts",
+    "**/*.ts",
+    "**/*.d.ts"
   ],
   "exclude": [
     "dist",

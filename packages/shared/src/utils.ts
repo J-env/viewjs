@@ -1,7 +1,17 @@
 const hasOwnProperty = Object.prototype.hasOwnProperty
 
-export function hasOwn(obj: object, key: PropertyKey): boolean {
+export function hasOwn(obj: object, key: PropertyKey): key is keyof typeof obj {
   return hasOwnProperty.call(obj, key)
+}
+
+export function remove<T = any>(arr: T[], item: T): T[] | void {
+  if (arr.length) {
+    const index = arr.indexOf(item)
+
+    if (index > -1) {
+      return arr.splice(index, 1)
+    }
+  }
 }
 
 /**
