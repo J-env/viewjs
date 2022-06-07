@@ -3,12 +3,12 @@ import {
   isArray,
   isPlainObject,
   isExtensible,
+  objectIs,
   hasOwn,
   getOwnPropertyDescriptor,
   eachObject,
   def,
-  defAccessor,
-  hasChanged
+  defAccessor
 } from '@viewjs/shared'
 
 import { __ob__ } from './constants'
@@ -68,7 +68,7 @@ export function defineReactive(
   function set(newVal) {
     const value = getter ? getter.call(obj) : val
 
-    if (!hasChanged(value, newVal)) {
+    if (objectIs(value, newVal)) {
       return
     }
 

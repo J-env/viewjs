@@ -1,4 +1,4 @@
-import { nextTick } from '@viewjs/shared'
+import { nextTick } from '@viewjs/web'
 
 import { Dep } from './dep'
 import type { Watcher } from './watcher'

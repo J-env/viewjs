@@ -1,34 +1,31 @@
 {
-  "name": "@viewjs/observer",
+  "name": "@viewjs/web",
   "version": "1.0.0",
-  "description": "@viewjs/observer comes from Vue.js@2.6.14",
+  "description": "",
   "main": "index.js",
-  "module": "dist/observer.esm-bundler.js",
-  "types": "dist/observer.d.ts",
+  "module": "dist/web.esm-bundler.js",
+  "types": "dist/web.d.ts",
   "files": [
     "index.js",
     "dist"
   ],
   "sideEffects": false,
   "buildOptions": {
-    "name": "viewjsObserver",
     "formats": [
       "esm-bundler",
       "esm-browser",
-      "cjs",
-      "global"
+      "cjs"
     ]
   },
   "scripts": {},
   "dependencies": {
-    "@viewjs/shared": "workspace:^1.0.0",
-    "@viewjs/web": "workspace:^1.0.0"
+    "@viewjs/shared": "workspace:^1.0.0"
   },
-  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/observer#readme",
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/web#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/J-env/viewjs.git",
-    "directory": "packages/observer"
+    "directory": "packages/web"
   },
   "bugs": {
     "url": "https://github.com/J-env/viewjs/issues"

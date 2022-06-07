@@ -1,10 +1,5 @@
-import {
-  noop,
-  nextTick as _nextTick,
-  hasOwn,
-  isFunction,
-  defAccessor
-} from '@viewjs/shared'
+import { noop, hasOwn, isFunction, defAccessor } from '@viewjs/shared'
+import { nextTick as _nextTick, } from '@viewjs/web'
 
 import { __watchers__, __data__ } from './constants'
 import {
@@ -24,7 +19,7 @@ export const nextTick = _nextTick
  * @param target
  * @param shallow
  */
-export function reactive(target: object, shallow?: boolean) {
+export function reactive<T extends object>(target: T, shallow?: boolean): T {
   target = target || {}
 
   if (hasOwn(target, __watchers__) && hasOwn(target, __data__)) {

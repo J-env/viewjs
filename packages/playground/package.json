@@ -1,0 +1,31 @@
+{
+  "name": "@viewjs/playground",
+  "private": true,
+  "version": "1.0.0",
+  "files": [],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@viewjs/observer": "workspace:^1.0.0",
+    "@viewjs/shared": "workspace:^1.0.0",
+    "@viewjs/web": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "@types/sass": "^1.43.1",
+    "@viewjs/vite-plugin": "workspace:^1.0.0",
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "autoprefixer": "^10.4.7",
+    "color-string": "^1.9.1",
+    "postcss": "^8.4.14",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.7.1",
+    "sass": "^1.52.2",
+    "vite": "^2.9.9",
+    "vite-plugin-windicss": "^1.8.4",
+    "windicss": "^3.5.4"
+  },
+  "author": "",
+  "license": "MIT"
+}

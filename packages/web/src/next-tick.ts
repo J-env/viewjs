@@ -1,6 +1,6 @@
+import { isNative, noop } from '@viewjs/shared'
+
 import { isIE, isIOS } from './ua'
-import { isNative } from './types'
-import { noop } from './fn'
 
 const callbacks: Function[] = []
 
