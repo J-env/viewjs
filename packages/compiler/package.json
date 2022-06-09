@@ -1,10 +1,10 @@
 {
-  "name": "@viewjs/vite-plugin",
+  "name": "@viewjs/compiler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "module": "dist/vite-plugin.esm-bundler.js",
-  "types": "dist/vite-plugin.d.ts",
+  "module": "dist/compiler.esm-bundler.js",
+  "types": "dist/compiler.d.ts",
   "files": [
     "index.js",
     "index.mjs",
@@ -19,26 +19,18 @@
   "exports": {
     ".": {
       "import": "./index.mjs",
-      "types": "./dist/vite-plugin.d.ts",
+      "types": "./dist/compiler.d.ts",
       "require": "./index.js"
     }
   },
   "scripts": {},
-  "dependencies": {
-    "@rollup/pluginutils": "^4.2.1",
-    "@types/lodash": "^4.14.182",
-    "cssjanus": "^2.1.0",
-    "fast-glob": "^3.2.11",
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "vite": "^2.9.9"
-  },
-  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/vite-plugin#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/compiler#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/J-env/viewjs.git",
-    "directory": "packages/vite-plugin"
+    "directory": "packages/compiler"
   },
   "bugs": {
     "url": "https://github.com/J-env/viewjs/issues"

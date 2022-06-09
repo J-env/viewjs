@@ -39,7 +39,7 @@ export default defineConfig({
   },
   extract: {
     include: [
-      '**/*.html',
+      'pages/**/*.html',
     ],
     exclude: [
     ],

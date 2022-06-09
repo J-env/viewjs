@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+
+<body>
+  <div>test</div>
+
+  <div class="relative">
+    <a href="{?= $this['href'] ?}">111</a>
+  </div>
+
+  <div class="text-xl {?= $this['a'] ?}">
+    {?php if ($this['x'] ?? ''): ?}
+
+    {?php else: ?}
+
+    {?php endif; ?}
+  </div>
+
+  <script type="module" src="./index.ts"></script>
+</body>
+
+</html>

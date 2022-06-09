@@ -13,7 +13,7 @@ const dom = document.createElement('div')
 document.body.appendChild(dom)
 
 watch(data, 'a', (value, oldValue) => {
-  dom.innerHTML = `value: ${value}, oldValue: ${oldValue}`
+  dom.innerHTML = ` value: ${value}, oldValue: ${oldValue}`
 
   console.log('watch()')
 }, {
