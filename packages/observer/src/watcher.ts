@@ -1,4 +1,4 @@
-import { noop, isObject, def, isFunction } from '@viewjs/shared'
+import { noop, isObject, def, isFunction } from '@viewjs/web'
 
 import { __watchers__, __watcher__ } from './constants'
 import { Dep, pushTarget, popTarget, DepTarget } from './dep'

@@ -1,4 +1,4 @@
-import { def, setPrototypeOf, objectCreate, remove } from '@viewjs/shared'
+import { def, setPrototypeOf, objectCreate, remove } from '@viewjs/web'
 
 import type { Observer } from './observe'
 import { __ob__ } from './constants'

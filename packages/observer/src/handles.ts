@@ -5,7 +5,7 @@ import {
   defAccessor,
   eachObject,
   isFunction
-} from '@viewjs/shared'
+} from '@viewjs/web'
 
 import { __data__, __watchers__ } from './constants'
 import { observe, defineReactive } from './observe'

@@ -1,5 +1,4 @@
-import { noop, hasOwn, isFunction, defAccessor } from '@viewjs/shared'
-import { nextTick as _nextTick, } from '@viewjs/web'
+import { noop, hasOwn, isFunction, defAccessor, nextTick as _nextTick, } from '@viewjs/web'
 
 import { __watchers__, __data__ } from './constants'
 import {

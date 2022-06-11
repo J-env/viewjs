@@ -1,1 +1,1 @@
-# @viewjs/core
+# viewjs

@@ -9,7 +9,7 @@ pnpm i
 # pnpm add -D typescript rollup ... -w
 pnpm add -D <package_name> ... -w
 
-# pnpm add @viewjs/shared vue ... --filter viewjs
+# pnpm add @viewjs/web vue ... --filter viewjs
 pnpm add <package_name> --filter <workspace_name>
 
 # pnpm --filter playground dev

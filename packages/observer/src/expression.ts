@@ -1,4 +1,4 @@
-import { noop } from '@viewjs/shared'
+import { noop } from '@viewjs/web'
 
 /**
  * Build a getter function. Requires eval.

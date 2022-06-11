@@ -1,4 +1,4 @@
-import { isArray, isObject, isFrozen } from '@viewjs/shared'
+import { isArray, isObject, isFrozen } from '@viewjs/web'
 
 import { __ob__ } from './constants'
 

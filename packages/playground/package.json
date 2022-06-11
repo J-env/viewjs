@@ -12,12 +12,13 @@
   },
   "dependencies": {
     "@viewjs/observer": "workspace:^1.0.0",
-    "@viewjs/shared": "workspace:^1.0.0",
-    "@viewjs/web": "workspace:^1.0.0"
+    "@viewjs/web": "workspace:^1.0.0",
+    "viewjs": "workspace:^1.0.0"
   },
   "devDependencies": {
     "@types/sass": "^1.43.1",
-    "@viewjs/vite-plugin": "workspace:^1.0.0",
+    "@viewjs/node": "workspace:^1.0.0",
+    "@viewjs/plugin-viewjs": "workspace:^1.0.0",
     "@vitejs/plugin-legacy": "^1.8.2",
     "autoprefixer": "^10.4.7",
     "color-string": "^1.9.1",

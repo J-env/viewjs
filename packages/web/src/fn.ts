@@ -1,3 +1,5 @@
+export function noop() { }
+
 export const raf = (window.requestAnimationFrame ||
   window['webkitRequestAnimationFrame'] ||
   window['mozRequestAnimationFrame'] ||

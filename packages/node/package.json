@@ -1,36 +1,28 @@
 {
-  "name": "@viewjs/compiler",
+  "name": "@viewjs/node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "module": "dist/compiler.esm-bundler.js",
-  "types": "dist/compiler.d.ts",
+  "module": "dist/node.esm-bundler.js",
+  "types": "dist/node.d.ts",
   "files": [
     "index.js",
-    "index.mjs",
     "dist"
   ],
+  "sideEffects": false,
   "buildOptions": {
     "formats": [
       "esm-bundler",
       "cjs"
     ]
   },
-  "exports": {
-    ".": {
-      "import": "./index.mjs",
-      "types": "./dist/compiler.d.ts",
-      "require": "./index.js"
-    }
-  },
   "scripts": {},
   "dependencies": {},
-  "devDependencies": {},
-  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/compiler#readme",
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/node#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/J-env/viewjs.git",
-    "directory": "packages/compiler"
+    "directory": "packages/node"
   },
   "bugs": {
     "url": "https://github.com/J-env/viewjs/issues"

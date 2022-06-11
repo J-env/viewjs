@@ -9,7 +9,7 @@ import {
   eachObject,
   def,
   defAccessor
-} from '@viewjs/shared'
+} from '@viewjs/web'
 
 import { __ob__ } from './constants'
 import { setProtoOfArray } from './array'
