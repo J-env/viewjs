@@ -26,12 +26,10 @@
   "scripts": {},
   "dependencies": {
     "@rollup/pluginutils": "^4.2.1",
-    "@types/lodash": "^4.14.182",
-    "cssjanus": "^2.1.0",
-    "fast-glob": "^3.2.11",
-    "lodash": "^4.17.21"
+    "@viewjs/node": "workspace:^1.0.0",
+    "cssjanus": "^2.1.0"
   },
-  "devDependencies": {
+  "peerDependencies": {
     "vite": "^2.9.9"
   },
   "homepage": "https://github.com/J-env/viewjs/tree/main/packages/plugin-viewjs#readme",

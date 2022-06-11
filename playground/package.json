@@ -1,5 +1,5 @@
 {
-  "name": "@viewjs/playground",
+  "name": "playground",
   "private": true,
   "version": "1.0.0",
   "files": [],
@@ -17,8 +17,6 @@
   },
   "devDependencies": {
     "@types/sass": "^1.43.1",
-    "@viewjs/node": "workspace:^1.0.0",
-    "@viewjs/plugin-viewjs": "workspace:^1.0.0",
     "@vitejs/plugin-legacy": "^1.8.2",
     "autoprefixer": "^10.4.7",
     "color-string": "^1.9.1",
