@@ -25,11 +25,12 @@
   },
   "scripts": {},
   "dependencies": {
+    "@babel/core": "^7.18.2",
     "@rollup/pluginutils": "^4.2.1",
     "@viewjs/node": "workspace:^1.0.0",
     "cssjanus": "^2.1.0"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "vite": "^2.9.9"
   },
   "homepage": "https://github.com/J-env/viewjs/tree/main/packages/plugin-viewjs#readme",

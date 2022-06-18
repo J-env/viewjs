@@ -1,0 +1,43 @@
+{
+  "name": "@viewjs/babel-preset",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/babel-preset.esm-bundler.js",
+  "types": "dist/babel-preset.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "sideEffects": false,
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "scripts": {},
+  "dependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/helper-module-imports": "^7.16.7",
+    "@babel/plugin-syntax-jsx": "^7.17.12",
+    "@babel/types": "^7.18.4",
+    "@types/babel__core": "^7.1.19",
+    "html-entities": "^2.3.3"
+  },
+  "homepage": "https://github.com/J-env/viewjs/tree/main/packages/babel-preset#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-env/viewjs.git",
+    "directory": "packages/babel-preset"
+  },
+  "bugs": {
+    "url": "https://github.com/J-env/viewjs/issues"
+  },
+  "keywords": [
+    "viewjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
